@@ -889,7 +889,7 @@
             },
             getRelativePath(file) {
                 let relativePath = file.webkitRelativePath;
-                if (!relativePath || relativePath.startsWith('/')) {
+                if (!relativePath) {
                     return file.name;
                 }
                 const pathParts = relativePath.split('/');
